@@ -187,6 +187,9 @@
     </style>
     <script type="text/javascript">
     function draw(data) {
+      ////////////////////////////////////////////
+      // All necessary variables and parameters
+      ////////////////////////////////////////////
         var posA = 0,
             posB = 0;
 
@@ -225,9 +228,9 @@
             arc_height = 500,
             radius = 350 / 3.5;
 
-        // THIS LINE WILL BE DELETED
-        // THIS LINE WILL BE DELTEED
-
+      /////////////////////////
+      // Set up Page Layout
+      /////////////////////////
         main_title = d3.select('body').append('div')
             .attr('id', 'title')
             .attr("width", window.outerWidth)
@@ -283,6 +286,10 @@
             .style("width", 1920 - 300 - 1050 + 'px')
             .style("height", 1500 + 'px');
 
+
+      ////////////////////////////////////////////
+      // Main content & class paragraph
+      ////////////////////////////////////////////
         para1 = d3.select('#content').append('div')
             .attr('class', 'paragraph')
             .style('display', 'block');
@@ -318,6 +325,11 @@
               "Or we can take a look at the case of Shanghai and USA. Shanghai is the biggest city and and a global financial hub in China. With OECD ranking, Shanghai students place the top in rankings for math, reading and science. However, on average, about 62.74% of two groups are sharing the same score in math. And they are 76.99% overlap and  74.25% overlap for reading and science respectively.";
         });
 
+
+
+      ////////////////////////////////////////////////////////
+      // Control Buttons to switch Between chart1 and chart2
+      ////////////////////////////////////////////////////////
         button = d3.select('#content').append('div')
             .attr('id', 'button');
 
@@ -355,15 +367,24 @@
             para1.style('display', 'block');
         })
 
+      //////////////////////////
+      // Draw chart1 and chart2
+      //////////////////////////
         draw_vis1(data);
         draw_vis2(data);
-        // THIS LINE WILL BE DELETED
-        // THIS LINE WILL BE DELTEED
 
+
+
+        // Function to calculate Effect Size (Cohen's d)
         function updateDiff(mean1, stdv1, mean2, stdv2) {
             return Math.abs(mean1 - mean2) / Math.sqrt(stdv1 * stdv1 + stdv2 * stdv2);
         };
-        // Building Vis 1
+
+
+
+      ////////////////////////////
+      // Function to build chart1
+      ////////////////////////////
         function draw_vis1(data) {
             var x = d3.scale.ordinal()
                 .rangePoints([0, slope_width]);
@@ -655,7 +676,9 @@
         };
 
 
-        // Building Vis 2
+      ///////////////////////////////
+      // Function to build chart2
+      ///////////////////////////////
         function draw_vis2(data) {
             dropdown_div = d3.select("#main_chart2").append("div")
                 .attr("class", "div_dropdown")
@@ -917,17 +940,7 @@
                     .attr("transform", "translate(0," + bell_height + ")")
                     .call(xAxis);
 
-                /*
-                bell_g1.append("g")
-                      .attr("class", "y axis")
-                      .call(yAxis)
-                    .append("text")
-                      .attr("transform", "rotate(-90)")
-                      .attr("y", 6)
-                      .attr("dy", ".71em")
-                      .style("text-anchor", "end")
-                      .text("Density");
-                */
+
                 var bell = bell_g1.selectAll(".bell")
                     .data(bells)
                     .enter().append("g")
@@ -1158,7 +1171,7 @@
                     return gaussianConstant * Math.exp(-.5 * x * x) / sigma;
                 };
 
-                function normalcdf(X) { //HASTINGS.  MAX ERROR = .000001
+                function normalcdf(X) {
                     var T = 1 / (1 + .2316419 * Math.abs(X));
                     var D = .3989423 * Math.exp(-X * X / 2);
                     var Prob = D * T * (.3193815 + T * (-.3565638 + T * (1.781478 + T * (-1.821256 + T * 1.330274))));
