@@ -1,5 +1,7 @@
 # README (VISUALIZATION OF PISA DATA)
 
+[Link of Gist Page](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147)
+
 ## How to read My Gist for Visualization of PISA data:
 
 * `index.html` : this file contains the final version of my visualization. The visualization contains two chart: Chart 1 and Chart 2. There are many different verions and sub-versions of Chart 1 and Chart 2.
