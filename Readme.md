@@ -6,7 +6,7 @@
 * **Chart 1** : slope1.html, slope2.html, slope3.html, slope4.html
 * **Chart 2** : bell1.html, bell2.html, bell3.html
 
-## Summary - in no more than 4 sentences, briefly introduce your data visualization and add any context that can help readers understand it
+## Summary
 
 * Use R to import large file as `pisa2012.csv` (File Size > 2GB). Calculate and extract useful information into `country_rank.csv` file.
 * The `country_rank.csv` contains these columns:
@@ -29,13 +29,13 @@ sd_sci_score: standard deviation of science score distribution
 * Use information of all the columns to create the second chart.
 
 
-## Design - explain any design choices you made including changes to the visualization after collecting feedback
+## Design
 
 * During the designation of the first chart, I have problem with flickering text when mouseover a rect and a text inside a svg. Myles (Udacity Forum Mentor) has given me feedback to change from using 'visibility' to 'opacity'
 * A feedback tells me that I should reduce the amount of scrolling page. So I change to smaller font size to solve this.
 * My first chart is the slopegraph. At the beginning, I have to use so many lines of code to create the slopegraph. The code and my design are not so consistent. It takes a lot of time to write the code if I want to change something in my graph. When I had created my 2nd chart, I had to learn multi-series line chart of Mike Bostock. After that, it gives me an idea to create a slopegraph by using multi-series line chart method. Therefore I redesign chart 1 from scratch.
 
-## Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
+## Feedback
 
 #### Feedback 1:
 
@@ -119,7 +119,7 @@ The second step of the viz is a bit complex to understand.  I would suggest to r
 
 ##### My response: Since I have used effect size to depict the percentage of overlap, I don't think it is necessary to use any significant test. You can review more about cohen's d effect size with the link in the Resources section below.
 
-## Resources - list any sources you consulted to create your visualization
+## Resources
 
 [Visualization of PISA Ranking of The Guardian](https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/12/5/1386241291926/PISAFULLLITERACYWEB.png)
 
