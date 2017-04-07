@@ -132,11 +132,18 @@ The second step of the viz is a bit complex to understand.  I would suggest to r
 ## List of Links of all charts and versions of my visualization:
 
 [index.html](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/index.html)
+
 [bell1](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/bell1.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/bell1.html)
+
 [bell2](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/bell2.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/bell2.html)
+
 [bell3](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/bell3.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/bell3.html)
+
 [slope1](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope1.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope1.html)
+
 [slope2](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope2.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope2.html)
+
 [slope3](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope3.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope3.html)
+
 [slope4](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope4.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope4.html)
 
