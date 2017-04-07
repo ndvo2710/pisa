@@ -3,8 +3,8 @@
 ## How to read My Gist for Visualization of PISA data:
 
 * `index.html` : this file contains the final version of my visualization. The visualization contains two chart: Chart 1 and Chart 2. There are many different verions and sub-versions of Chart 1 and Chart 2.
-* **Chart 1** : slope1.html, slope2.html, slope3.html, slope4.html
-* **Chart 2** : bell1.html, bell2.html, bell3.html
+* **Chart 1** : `slope1.html`, `slope2.html`, `slope3.html`, `slope4.html`
+* **Chart 2** : `bell1.html`, `bell2.html`, `bell3.html`
 
 ## Summary
 
