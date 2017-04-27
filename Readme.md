@@ -121,6 +121,18 @@ The second step of the viz is a bit complex to understand.  I would suggest to r
 
 ##### My response: Since I have used effect size to depict the percentage of overlap, I don't think it is necessary to use any significant test. You can review more about cohen's d effect size with the link in the Resources section below.
 
+
+### Feedback 5:
+Could you make the sort order consistent? If if I select Albania in the Left hand Box, it should be the left hand curve (red) and the left hand country below (red). At the moment it is the wrong way round? If you do this there is no need for the colour coding on the chart? This is also slightly confusing as the colours are a slightly different hue.
+
+##### My response: There are three parts on my second chart: dropdown select, bell shape and tooltip. I organize it in the following way: Country has higher ranking in a selected subject is on the right side and vice versa. I know sometimes it might be sometimes confusing when the the selected country in the left dropdown shows information on the right side. However, if I change the order as described as the above feedback, in some situation the country on the left will have the bell shape on the right side. 
+
+### Feedback 6:
+For the extra impact could you default to Hong Kong v Massachusetts instead of Albania v Albania? It would nicely follow on from the story on page one and save the reader from searching themselves?
+
+##### My response: Instead of creating another version, I change it directly in the index.html
+
+
 ## Resources
 
 [Visualization of PISA Ranking of The Guardian](https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/12/5/1386241291926/PISAFULLLITERACYWEB.png)
@@ -148,4 +160,3 @@ The second step of the viz is a bit complex to understand.  I would suggest to r
 [slope3](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope3.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope3.html)
 
 [slope4](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope4.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope4.html)
-
