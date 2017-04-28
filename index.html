@@ -307,7 +307,7 @@
             "</br> </br>" +
             "The results again raise questions about the global competitiveness of the US educational system" +
             "</br> </br>" +
-            "Since Hongkong(China) placed 3rd in math ranking, it is said that Hongkong students scored higher in math than Massachusette(USA) students did. But this statement is still ambiguous because PISA ranking is based on the average score of each country on each subject. In reality, some Hongkong students have higher scores than most of Massachusette students, and vice versa. Many students of these two cities are, perhaps majority of them, sharing the same scores. <span style='text-decoration:underline'> The average number does not reflect that reality.</span>. Therefore, the important question should be asked is <span style='font-weight:bold'> how many percent of students are sharing the same scores among two groups.</span> The average score or t-test does not answer this question. <span style='font-weight:bold'> Effect Size (Cohen's d) is what we need to answer this question</span>");
+            "Since Hongkong(China) placed 3rd in math ranking, it is said that Hongkong students scored higher in math than Massachusette(USA) students did. But this statement is still ambiguous because PISA ranking is based on the average score of each country on each subject. In reality, some Hongkong students have higher scores than most of Massachusette students, and vice versa. Many students of these two cities are, perhaps majority of them, sharing the same scores. <span style='text-decoration:underline'> The average number does not reflect that reality.</span>. </br> </br> Therefore, the important question should be asked is <span style='font-weight:bold'> how many percent of students are sharing the same scores among two groups.</span> The average score or t-test does not answer this question. <span style='font-weight:bold'> Effect Size (Cohen's d) is what we need to answer this question</span>");
 
         // Create Paragraph 2
         // Set display as none to make paragraph 2 invisible
@@ -319,15 +319,13 @@
             setTimeout(function() {
                 MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
             }, 10);
-            return "<span style='font-weight:bold'>Effect size measures either the sizes of associations or the sizes of differences.</span> Therefore, from effect size, we can assess the amount of overlap between two groups. <span style='font-weight:bold'>If the effect size is small, the amount of overlap between groups is large, and vice versa.</span> Let's use the last example:" + "<br/><br/>" +
-                "First, we calculate the effect size of Hongkong(China) and Massachusette(USA):" + "<br/><br/>" +
-                "$Effect\\ Size\\ (Cohen's\\ d)\\ \\delta\\ = \\frac{|\\mu_1-\\mu_2|}{\\sqrt{\\sigma_1^2 + \\sigma_2^2}} =\\frac{|561.42-513.39|}{\\sqrt{95.87^2 + 97.36^2}} = 0.35$" + "<br/><br/>" +
-                "Second, we can calculate the percentage of Overlap between the math score of Hongkong students and Massachusette:" + "<br/><br/>" +
-                "$OVL\\ = 2\\Phi\(\\frac{-|\\delta|}{2})\\ = 2\\Phi\(\\frac{-|0.35|}{2})\\ = 0.8605\\ =\\ 86.05\\%$" + "<br/><br/>" +
-                "Last, the probability of superiority is:" + "<br/><br/>" +
-                "$CL\\ = \\Phi\(\\frac{\\delta}{\\sqrt{2}})\\ = 0.5981\\ =\\ 59.81\\% $" + "<br/><br/>" +
-                "<span style='font-weight:bold'>With effect size = 0.35, the percentage of overlap between these two groups are up to 86.05% even though HongKong is in the top of the math ranking and Massachusette is at the position of about one-third of the math ranking.</span> Moreover, the probability of superiority is 0.5981 or 59.81%, which means that if we picked randomly one student of each country, the probability of the event that that Hongkong student has the higher math score than Massachusette student does is 0.5981 (Intuitively, 0.5981 is quite close to the probability of head when we toss a coin). <span style='text-decoration:underline'>And we should only concern about the competitiveness in education of Massachusette if this probability is .9 or above, when we compare with Hongkong.</span>" + "<br/><br/>" +
-                "Or we can take a look at the case of Shanghai and USA. Shanghai is the biggest city and and a global financial hub in China. With OECD ranking, Shanghai students place the top in rankings for math, reading and science. However, on average, about 62.74% of two groups are sharing the same score in math. And they are 76.99% overlap and  74.25% overlap for reading and science respectively.";
+            return "<span style='font-weight:bold'>Effect size measures either the sizes of associations or the sizes of differences.</span> Therefore, from effect size, we can assess the amount of overlap between two groups. <span style='font-weight:bold'>If the effect size is small, the amount of overlap between groups is large, and vice versa.</span> Let's use the last example(see below note for calculation):" + "<br/><br/>" +
+                "<span style='font-weight:bold'>The overlap between Math Scores for HongKong students and Massachusette students is 86.05%, even though HongKong is in the top of the math ranking and Massachusette is at the position of about one-third of the math ranking (effect size is 0.35). <br/><br/> </span> <span style='font-weight:bold'>The probability of superiority is 0.5981 or 59.81%, which means that if we picked randomly one student of each country, the probability that that Hongkong student has the higher math score than Massachusette student is 0.5981 - almost a flip of a coin ! </span> <span style='font-size:9pt'>We should only concern about the competitiveness in education of Massachusette if this probability is .9 or above, when we compare with Hongkong.</span>" + "<br/><br/>" +
+                "Or we can take a look at the case of Shanghai and USA. Shanghai is the biggest city and and a global financial hub in China. With OECD ranking, Shanghai students place the top in rankings for math, reading and science. However, on average, about 62.74% of two groups are sharing the same score in math. And they are 76.99% overlap and  74.25% overlap for reading and science respectively." + "<br/><br/>" +
+                "<span style='text-decoration:underline'>Note:</span> <br/><span style='font-size:8pt'>" +
+                "$Effect\\ Size\\ (Cohen's\\ d)\\ \\delta\\ = \\frac{|\\mu_1-\\mu_2|}{\\sqrt{\\sigma_1^2 + \\sigma_2^2}} =\\frac{|561.42-513.39|}{\\sqrt{95.87^2 + 97.36^2}} = 0.35$" + "<br/>" +
+                "$OVL\\ = 2\\Phi\(\\frac{-|\\delta|}{2})\\ = 2\\Phi\(\\frac{-|0.35|}{2})\\ = 0.8605\\ =\\ 86.05\\%$" + "<br/>" +
+                "$CL\\ = \\Phi\(\\frac{\\delta}{\\sqrt{2}})\\ = 0.5981\\ =\\ 59.81\\% $</span>" ;
         });
 
 
@@ -495,7 +493,8 @@
             // color domain
             color.domain(data.rows.slice(0));
             // color range
-            color.range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"])
+            color.range(["#fbdb65"])
+            //color.range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"])
 
             // Grouping x elements
             svg.append("g")
