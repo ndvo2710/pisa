@@ -374,6 +374,21 @@
             next_button.style('display', 'block');
             para2.style('display', 'none');
             para1.style('display', 'block');
+            // Highlight HongKong-China and Massachusetts-USA in the slope chart
+            // Highlight HongKong-China
+            d3.selectAll('#outer_HongKong-China').style('opacity', '0.7');
+            d3.selectAll('#text_HongKong-China').style('font-weight', 'bold');
+            d3.selectAll('.match').style('opacity', '0.2');
+            d3.selectAll('.ranking_rect_text_HongKong-China').style('opacity', '1');
+            d3.selectAll('.HongKong-China.match').style('opacity', '0.9').attr('r', '5');
+            d3.selectAll('.inner_line').style("opacity", "0.1");
+            // Highlight Massachusetts-USA
+            d3.selectAll('#outer_Massachusetts-USA').style('opacity', '0.7');
+            d3.selectAll('#text_Massachusetts-USA').style('font-weight', 'bold');
+            d3.selectAll('.match').style('opacity', '0.2');
+            d3.selectAll('.ranking_rect_text_Massachusetts-USA').style('opacity', '1');
+            d3.selectAll('.Massachusetts-USA.match').style('opacity', '0.9').attr('r', '5');
+            d3.selectAll('.inner_line').style("opacity", "0.1");
         })
 
         //////////////////////////
