@@ -10,6 +10,14 @@
 
 ## Summary
 
+### Story behind the charts
+
+While finding resources for my visualization, I have seen a visualization for PISA data, which is the OECD rankings slopegraph. However, I feel that this ranking chart does not reflect how much superior one country education system compares to others. Also we cannot know how many percentage of students between two countries are sharing the same score. The answer for this question is effect size, which is immensely popular in medical and psychology. Even though effect size is a good approach to compare two country educational system, visualizing effect size is a very tough problem. Fortunately, I found this article [Interpreting Cohen's d effect size- interactive visualization -Created by Kristoffer Magnusson](http://rpsychologist.com/d3/cohend/). This ineractive visualization of two bell curves to intepret effect size is exactly what I need to apply for visualization of PISA data. Therefore I decide to create:
+
+* A slopegraph contains country ranking for each subject (OECD rankings)
+* Two bell curves share an overlapping parts in order to depict the percentage of overlap of students scores between two countries.
+
+### Data Mining Before Visualization
 * Use R to import large file as `pisa2012.csv` (File Size > 2GB). Calculate and extract useful information into `country_rank.csv` file.
 * The `country_rank.csv` contains these columns:
 
@@ -30,12 +38,29 @@ sd_sci_score: standard deviation of science score distribution
 * Use math, read, sci columns to create the first chart.
 * Use information of all the columns to create the second chart.
 
+Note: I have compared the average scores and standard deviation between my data and OECD report. The values(PV1) are similar.
 
 ## Design
 
 * During the designation of the first chart, I have problem with flickering text when mouseover a rect and a text inside a svg. Myles (Udacity Forum Mentor) has given me feedback to change from using 'visibility' to 'opacity'
 * A feedback tells me that I should reduce the amount of scrolling page. So I change to smaller font size to solve this.
 * My first chart is the slopegraph. At the beginning, I have to use so many lines of code to create the slopegraph. The code and my design are not so consistent. It takes a lot of time to write the code if I want to change something in my graph. When I had created my 2nd chart, I had to learn multi-series line chart of Mike Bostock. After that, it gives me an idea to create a slopegraph by using multi-series line chart method. Therefore I redesign chart 1 from scratch.
+
+### Chart details:
+
+*Chart 1 (OECD rankings):*
+
+* Chart type : slopegraph
+* The reason to choose slopegraph is to replicate the same chart as OECD ranking.
+* There are many ways to implement slopegraph. However, if we use multi-series line, it can be easily updated and reusable with new PISA data. There are three variables for this chart: ranking, subject and country. We can encode X axis for ranking. However, it's not good to stretch the x axis when ranking is ranged from 1 to 68. Therefore y axis should be used to encode ranking. And then X axis is for subject and country is used as a legend.
+        
+*Chart 2 ( Two Bell Curves):*
+
+* Chart type: bell curves ( Also this is multi-series line chart)
+* The reason to choose bell curve is to visualize the effect size and the percentage overlap between two groups.
+* Each curve is the normal distribution. So x axis is quantile value, y axis is p value in normal distribution pdf. Color is encoded for country. Legend is country name.
+       
+
 
 ## Feedback
 
@@ -160,3 +185,4 @@ For the extra impact could you default to Hong Kong v Massachusetts instead of A
 [slope3](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope3.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope3.html)
 
 [slope4](http://bl.ocks.org/ndvo2710/raw/b53f5a00ec3a91701f900ba6fca53147/slope4.html) with [code](https://gist.github.com/ndvo2710/b53f5a00ec3a91701f900ba6fca53147/raw/e235b1e98f74c5d70f49d8ef400873920df80bfa/slope4.html)
+
